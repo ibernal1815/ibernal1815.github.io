@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Reference — Comp 484</title>
+  <link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header role="banner" class="site-header">
+    <h1 class="site-title">Comp 484</h1>
+    <p class="page-title">HTML Reference</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+        <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+        <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+        <li><a href="links.html" title="Creating links">Creating links</a></li>
+        <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+        <li><a href="next.html" title="Next steps">Next steps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <header>
+        <h2 id="ref-heading">HTML Reference</h2>
+        <p>On this page you’ll find a quick reference to common HTML terms and a table of frequently used <a href="#named">named character entities</a>.</p>
+      </header>
+
+      <section aria-labelledby="terms-heading">
+        <h3 id="terms-heading">HTML Terms</h3>
+
+        <dl>
+          <dt>Attribute</dt>
+          <dd>An HTML element property that provides additional information or functionality for an element. Attributes appear as a name/value pair with the value contained in quotation marks.</dd>
+
+          <dt>Block-Level Element</dt>
+          <dd>HTML tags that create blocks of content within the document such as headings and paragraphs. Block-level elements typically stack one on top of each other based on the order they appear in the code.</dd>
+
+          <dt>Child Element</dt>
+          <dd>Any HTML element that is contained inside another HTML element. Child element tags must close before their parent element tags.</dd>
+
+          <dt>Closing Tag</dt>
+          <dd>Appears after an element’s content and indicates the end of an element. Is identical to an element’s opening tag with the addition of a forward slash (/) prior to the tag’s character.</dd>
+
+          <dt>Comment</dt>
+          <dd>Reference information added to the code. May include an overview of more complex code, a reminder for future authors, or communications within a team.</dd>
+
+          <dt>CMS</dt>
+          <dd>CMS is short for <strong>Content Management System</strong>, and refers to any system designed to allow users to create and maintain content. For the web, it primarily refers to software designed to manage web sites and their content. Examples include Joomla! and WordPress.</dd>
+
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets (CSS) is a presentation language used to control the presentation and layout of web pages.</dd>
+
+          <dt>Doctype</dt>
+          <dd>Short for <strong>Document Type Declaration</strong>. Appears at the top of all HTML documents to trigger standards mode and identifies the version of HTML used by the document.</dd>
+
+          <dt>DOM</dt>
+          <dd>The DOM, or <strong>Document Object Model</strong>, is a representation of documents like HTML. The DOM can be thought of as an outline where tags are represented by “nodes.” Scripting languages like JavaScript reference the DOM when accessing or modifying page content.</dd>
+
+          <dt>Elements</dt>
+          <dd>HTML elements consist of an HTML tag, used to identify the content, and the content itself. Is often used interchangeably with the term “tags” although technically tags only refer to the tag itself.</dd>
+
+          <dt>FTP</dt>
+          <dd>FTP stands for <strong>File Transfer Protocol</strong>. It’s a common protocol used for transferring large files from one server to another.</dd>
+
+          <dt>HTTP</dt>
+          <dd>HTTP, or <strong>Hypertext Transfer Protocol</strong>, controls the formatting and transmission of HTML pages across web servers.</dd>
+
+          <dt>Inline-Level Elements</dt>
+          <dd>Elements that appear within the normal flow of text. Unlike block-level elements, inline-level elements do not start new lines within the normal document flow.</dd>
+
+          <dt>JavaScript</dt>
+          <dd>Scripting language developed by Netscape and used to control much of the functionality and behavior on the web.</dd>
+
+          <dt>Metadata</dt>
+          <dd>Additional information about the document or document content, typically stored in meta tags.</dd>
+
+          <dt>MIME Type</dt>
+          <dd>Short for <strong>Multipurpose Internet Mail Extension</strong>. MIME types are used to tell user agents what type of program a file or extension is. Without a proper MIME type, user agents can have trouble properly running applications or processing files.</dd>
+
+          <dt>Parent Element</dt>
+          <dd>An HTML element that contains another element. It is possible for an element to be a child of one element and the parent of another.</dd>
+
+          <dt>Replaced Element</dt>
+          <dd>Any HTML element where the contents of the element are replaced by something else. Examples would be images, video, or other plug-in content.</dd>
+
+          <dt>Tag</dt>
+          <dd>Markup characters that indicate what type of content appear on the page. Most tags consist of both an opening and closing tag.</dd>
+
+          <dt>URL</dt>
+          <dd>URL stands for <strong>Uniform Resource Locator</strong>. It serves as the address of a document or other resource on the web.</dd>
+
+          <dt>W3C</dt>
+          <dd>The W3C, or <strong>World Wide Web Consortium</strong>, is the standards body responsible for authoring the HTML specification.</dd>
+        </dl>
+      </section>
+
+      <section aria-labelledby="named-heading">
+        <h3 id="named-heading">Common Named Character Entities</h3>
+
+        <table border="1" cellspacing="0" cellpadding="4" summary="A quick reference of named character entities, including an example of the character, a description, and the entity code.">
+          <caption>Quick reference: named character entities</caption>
+          <thead>
+            <tr>
+              <th scope="col">Character</th>
+              <th scope="col">Description</th>
+              <th scope="col">Entity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center">&quot;</td>
+              <td>double quotation mark</td>
+              <td><code>&amp;quot;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&amp;</td>
+              <td>ampersand</td>
+              <td><code>&amp;amp;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&lang;</td>
+              <td>left-angle bracket</td>
+              <td><code>&amp;lang;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&rang;</td>
+              <td>right-angle bracket</td>
+              <td><code>&amp;rang;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&lt;</td>
+              <td>less than symbol</td>
+              <td><code>&amp;lt;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&gt;</td>
+              <td>greater than symbol</td>
+              <td><code>&amp;gt;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&nbsp;</td>
+              <td>non-breaking white space</td>
+              <td><code>&amp;nbsp;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&apos;</td>
+              <td>apostrophe</td>
+              <td><code>&amp;apos;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&ldquo;</td>
+              <td>left double quote</td>
+              <td><code>&amp;ldquo;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&rdquo;</td>
+              <td>right double quote</td>
+              <td><code>&amp;rdquo;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&laquo;</td>
+              <td>left-pointing double angle quotation mark</td>
+              <td><code>&amp;laquo;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&reg;</td>
+              <td>registered sign</td>
+              <td><code>&amp;reg;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&copy;</td>
+              <td>copyright symbol</td>
+              <td><code>&amp;copy;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&trade;</td>
+              <td>trademark symbol</td>
+              <td><code>&amp;trade;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&frasl;</td>
+              <td>fraction slash</td>
+              <td><code>&amp;frasl;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&ndash;</td>
+              <td>en dash</td>
+              <td><code>&amp;ndash;</code></td>
+            </tr>
+            <tr>
+              <td class="center">&mdash;</td>
+              <td>em dash</td>
+              <td><code>&amp;mdash;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <address>
+      <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
+      18111 Nordhoff St Northridge, CA 91330
+    </address>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Creating Links — Comp 484</title>
+  <link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header role="banner" class="site-header">
+    <h1 class="site-title">Comp 484</h1>
+    <p class="page-title">Creating Links</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+        <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+        <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+        <li><a href="links.html" title="Creating links">Creating links</a></li>
+        <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+        <li><a href="next.html" title="Next steps">Next steps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <header>
+        <h2 id="page-title">Creating Links</h2>
+      </header>
+
+      <section aria-labelledby="intro-links">
+        <h3 id="intro-links">Overview</h3>
+        <p>Perhaps the most important aspect of HTML is the ability to link from one document to another. This is the basic concept underlying the web and without this functionality the World Wide Web would not exist.</p>
+      </section>
+
+      <section aria-labelledby="link-syntax">
+        <h3 id="link-syntax">Link syntax</h3>
+        <p>Creating links is relatively straightforward, and the syntax provides a lot of flexibility in where and how links are applied. To create a link, you’ll use the anchor element (<code>&lt;a&gt;</code>) to wrap the content you wish to convert to a link. Attributes inside the anchor tag tell the browser where the page is linking to, or point to an external resource that the browser should download.</p>
+
+        <p>Take the following link example:</p>
+        <pre><code>&lt;a href="syntax.htm" title="learn more about syntax"&gt;HTML syntax&lt;/a&gt;</code></pre>
+
+        <p>The <strong>href</strong> attribute tells the browser how to <em>resolve</em> the link; that is where the user should be directed when the link is clicked. The optional <strong>title</strong> attribute provides a description of the link and can be helpful for accessibility (use sparingly — screen reader behaviour varies).</p>
+      </section>
+
+      <section aria-labelledby="link-types">
+        <h3 id="link-types">Link types</h3>
+        <p>There are three basic types of link: <strong>absolute</strong>, <strong>site-root relative</strong>, and <strong>document relative</strong>. Each type refers to the value of the <strong>href</strong> attribute, which directs how the browser resolves the link once clicked.</p>
+
+        <h4 id="absolute-links">Absolute links</h4>
+        <p>Absolute links contain the full URL, including protocol. They’re typically used for external resources:</p>
+        <pre><code>&lt;a href="http://www.google.com" title="You can find it at google.com!"&gt;google.com&lt;/a&gt;</code></pre>
+
+        <h4 id="doc-relative">Document relative links</h4>
+        <p>Document-relative links navigate relative to the current document’s location. Example (same folder):</p>
+        <pre><code>&lt;a href="contact.htm" title="our contact page"&gt;Contact us&lt;/a&gt;</code></pre>
+
+        <p>If the target is in a subfolder:</p>
+        <pre><code>&lt;a href="resources/contact.htm" title="our contact page"&gt;Contact us&lt;/a&gt;</code></pre>
+
+        <p>To move up one folder level:</p>
+        <pre><code>&lt;a href="../contact.htm" title="our contact page"&gt;Contact us&lt;/a&gt;</code></pre>
+
+        <h4 id="root-relative">Site-root relative links</h4>
+        <p>Site-root relative links always start at the site root (leading slash) and are stable regardless of the current document location:</p>
+        <pre><code>&lt;a href="/contact.htm" title="our contact page"&gt;Contact us&lt;/a&gt;</code></pre>
+
+        <p>Deeper in the tree:</p>
+        <pre><code>&lt;a href="/resources/contact.htm" title="our contact page"&gt;Contact us&lt;/a&gt;</code></pre>
+      </section>
+
+      <section aria-labelledby="fragment-id">
+        <h3 id="fragment-id">Fragment identifiers</h3>
+        <p>Fragment identifiers let you link to a specific location within a page by pointing to an element with an <strong>id</strong> attribute. Example heading:</p>
+        <pre><code>&lt;h2 id="camp"&gt;Camping&lt;/h2&gt;</code></pre>
+
+        <p>Link to that fragment on the same page:</p>
+        <pre><code>&lt;a href="#camp"&gt;Learn more about camping&lt;/a&gt;</code></pre>
+
+        <p>Or link to a fragment on another page:</p>
+        <pre><code>&lt;a href="faq.htm#camp"&gt;Read our FAQ on camping.&lt;/a&gt;</code></pre>
+      </section>
+
+      <section aria-labelledby="best-practices">
+        <h3 id="best-practices">Best practices</h3>
+        <ul>
+          <li>Use meaningful link text (avoid "click here").</li>
+          <li>Prefer <strong>root-relative</strong> or consistent document-relative strategies to keep links maintainable.</li>
+          <li>For external links, consider <code>rel="noopener noreferrer"</code> when using <code>target="_blank"</code>.</li>
+          <li>Keep <code>title</code> attributes only when they add value — they aren’t a replacement for descriptive link text.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <address>
+      <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
+      18111 Nordhoff St Northridge, CA 91330
+    </address>
+  </footer>
+</body>
+</html>
