@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isaiah Bernal | Cybersecurity &amp; IT Systems</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<canvas id="matrix-bg"></canvas>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#94;</button>
+<button class="sound-btn" id="soundBtn">SFX</button>
+
+<!-- SPLASH -->
+<div id="splash">
+  <div class="sp-radar">
+    <div class="sp-ring"></div><div class="sp-ring"></div>
+    <div class="sp-ring"></div><div class="sp-ring"></div>
+    <div class="sp-sweep"></div>
+    <div class="sp-core"><div class="sp-dot"></div></div>
+  </div>
+  <div class="sp-wrap">
+    <div class="sp-label">Establishing Secure Connection</div>
+    <div class="sp-title" id="spTitle">SIGNAL LOCK IN PROGRESS</div>
+    <div class="sp-segs" id="spSegs"></div>
+    <div class="sp-phase" id="spPhase">&nbsp;</div>
+    <div class="sp-enter" id="spEnter">
+      <div class="sp-enter-line">
+        <span class="pr">root@isaiah:~$</span>&nbsp;<span>./enter_portfolio.sh</span>&nbsp;<span class="sp-caret"></span>
+      </div>
+      <button class="sp-btn" id="spBtn">[ ENTER PORTFOLIO ]</button>
+      <div class="sp-hint">press ENTER or SPACE to continue</div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ISAIAH<span>_</span>BERNAL<span>.</span></div>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" onclick="closeNav()">ABOUT</a>
+    <a href="#skills" onclick="closeNav()">SKILLS</a>
+    <a href="#experience" onclick="closeNav()">EXPERIENCE</a>
+    <a href="#projects" onclick="closeNav()">PROJECTS</a>
+    <a href="#certs" onclick="closeNav()">CERTS</a>
+    <a href="#blog" onclick="closeNav()">BLOG</a>
+    <a href="#contact" onclick="closeNav()">CONTACT</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-status"><div class="status-dot"></div><span class="nav-status-txt">ONLINE</span></div>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-eyebrow">IT Systems Specialist &amp; Security-Oriented Developer</div>
+  <h1 class="hero-name" data-text="ISAIAH">ISAIAH</h1>
+  <div class="hero-role"><span id="hero-tw"></span></div>
+  <p class="hero-desc">5+ years delivering technical support and infrastructure management. Cloud Windows SysAdmin at CSUN. AI Data Trainer at Handshake. B.S. CIT candidate at CSUN (2026). Six active CompTIA and ISC2 certifications. Building security tooling and moving toward detection engineering and SOC operations.</p>
+  <div class="hero-btns">
+    <a href="#contact" class="btn btn-primary">[ ESTABLISH CONNECTION ]</a>
+    <a href="#projects" class="btn btn-outline">[ VIEW PORTFOLIO ]</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Certifications</span></div>
+    <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">Lab Projects</span></div>
+    <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat"><span class="stat-num" data-count="600">0</span><span class="stat-label">AI Evals Reviewed</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label">// ABOUT.SH</div>
+  <h2 class="sec-title">About <span>Me</span></h2>
+  <div class="sec-div"></div>
+  <div class="about-grid reveal">
+    <div>
+      <div class="term-win">
+        <div class="term-bar"><div class="tdot r"></div><div class="tdot y"></div><div class="tdot g"></div><div class="tbar-title">~/about/isaiah.sh</div></div>
+        <div class="term-body">
+          <div><span class="pr">$ </span>whoami</div>
+          <div class="hi">Isaiah Bernal &mdash; IT Systems Specialist</div>
+          <div class="mt"><span class="pr">$ </span>cat certifications.txt</div>
+          <div class="out">A+ | Network+ | Security+ | CySA+ | Cloud+ | ISC2 CC</div>
+          <div class="mt"><span class="pr">$ </span>ls skills/</div>
+          <div class="hi">Python/ C/ Go/ SQL/ PowerShell/ Bash/ JS/</div>
+          <div class="mt"><span class="pr">$ </span>cat status.txt</div>
+          <div class="out">CSUN Cloud SysAdmin | Handshake AI Trainer</div>
+          <div class="mt"><span class="pr">$ </span>echo $GOAL</div>
+          <div class="hi">SOC Analyst &rarr; Detection Engineer &rarr; Purple Team</div>
+          <div class="mt"><span class="pr">$ <span class="blink">_</span></span></div>
+        </div>
+      </div>
+      <div class="mini-grid">
+        <div class="mini-card"><div class="mini-title">Infrastructure</div><div class="mini-text">5+ yrs managing hybrid Windows/Linux, 15+ VMs, automated provisioning and DR testing.</div></div>
+        <div class="mini-card"><div class="mini-title">Security Dev</div><div class="mini-text">Python C2 lab, SQL injection env, macOS entitlement auditor, Linux privesc lab.</div></div>
+        <div class="mini-card"><div class="mini-title">Certifications</div><div class="mini-text">6 active: CompTIA A+, Net+, Sec+, CySA+, Cloud Essentials+. ISC2 CC.</div></div>
+        <div class="mini-card"><div class="mini-title">AI Evaluation</div><div class="mini-text">600+ model outputs reviewed at ~97% guideline adherence at Handshake.</div></div>
+        <div class="mini-card"><div class="mini-title">Full-Stack</div><div class="mini-text">React, NestJS, FastAPI, Next.js, PostgreSQL. 2nd-place CSUN hackathon.</div></div>
+        <div class="mini-card"><div class="mini-title">Community</div><div class="mini-text">SOSE &mdash; Society of Software Engineers, CSUN. Oct 2025 &ndash; Present.</div></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <p>Isaiah Bernal is an IT Systems Specialist with 5+ years of professional experience in technical support and infrastructure management. He serves as a Cloud Windows Systems Administrator at CSUN and an AI Data Trainer at Handshake, combining deep field expertise with applied security engineering.</p>
+      <p>His technical range spans hybrid Windows and Linux environments, virtualization across VMware, VirtualBox, and Proxmox, and security-oriented development in C, Python, Go, and SQL. He holds six active certifications across CompTIA and ISC2 and is an active member of the Society of Software Engineers at CSUN.</p>
+      <p>His long-term goal is purple team operations &mdash; understanding both offensive and defensive tradecraft to build more effective detection and response capabilities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RANKS -->
+<section id="ranks" style="padding-top:0">
+  <div class="sec-label">// CTF_PLATFORMS.DAT</div>
+  <h2 class="sec-title">Hacker <span>Ranks</span></h2>
+  <div class="sec-div"></div>
+  <div class="rank-grid reveal">
+    <div class="rank-card rank-thm">
+      <div class="rank-plat">TryHackMe</div>
+      <div class="rank-val">Top 10%</div>
+      <div class="rank-sub">Global Ranking | Streak: 30+ Days | 100+ Rooms</div>
+      <div class="rank-bar-wrap"><div class="rank-bar" style="--fill:78%"></div></div>
+      <div class="rank-meta"><span>XP: 45,230</span><span>Badges: 18</span><span>Rank: Hacker</span></div>
+    </div>
+    <div class="rank-card rank-htb">
+      <div class="rank-plat">HackTheBox</div>
+      <div class="rank-val">Script Kiddie</div>
+      <div class="rank-sub">Working toward Hacker rank | Machines Owned: 12</div>
+      <div class="rank-bar-wrap"><div class="rank-bar" style="--fill:35%"></div></div>
+      <div class="rank-meta"><span>Points: 3,400</span><span>User Owns: 12</span><span>Root Owns: 8</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-label">// SKILLS.JSON</div>
+  <h2 class="sec-title">Technical <span>Arsenal</span></h2>
+  <div class="sec-div"></div>
+  <div class="skills-grid reveal">
+    <div class="skill-cat"><div class="skill-cat-title">Languages</div>
+      <div class="skill-item"><span class="skill-name">Python <span class="endorsed">ASSESSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">C</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Go</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PowerShell / Bash</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+    </div>
+    <div class="skill-cat"><div class="skill-cat-title">Security &amp; Forensics</div>
+      <div class="skill-item"><span class="skill-name">Ethical Hacking <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Penetration Testing</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Digital Forensics</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Memory Forensics</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Incident Response</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Threat Modeling <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+    </div>
+    <div class="skill-cat"><div class="skill-cat-title">Detection &amp; Monitoring</div>
+      <div class="skill-item"><span class="skill-name">Detection Engineering <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">SIEM</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Log Analysis</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Splunk</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">CTI / Threat Intel</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">IDS / Security Monitoring</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+    </div>
+    <div class="skill-cat"><div class="skill-cat-title">Tools</div>
+      <div class="skill-item"><span class="skill-name">Wireshark / Tcpdump</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Nmap / Burp Suite</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Volatility</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Sysinternals</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+    </div>
+    <div class="skill-cat"><div class="skill-cat-title">Systems &amp; Infrastructure</div>
+      <div class="skill-item"><span class="skill-name">Windows Server / AD</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Linux <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">macOS <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">System Hardening</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">VMware / VirtualBox / Proxmox</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Group Policy / Registry</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+    </div>
+    <div class="skill-cat"><div class="skill-cat-title">Web &amp; Backend</div>
+      <div class="skill-item"><span class="skill-name">FastAPI / Flask</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">NestJS / Next.js</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">React</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">CI/CD <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Web App Security <span class="endorsed">ENDORSED</span></span><div class="skill-pips"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-label">// EXPERIENCE.LOG</div>
+  <h2 class="sec-title">Work <span>Experience</span></h2>
+  <div class="sec-div"></div>
+  <div class="tl-tabs reveal">
+    <button class="tl-tab active" onclick="switchTab('work',this)">WORK</button>
+    <button class="tl-tab" onclick="switchTab('education',this)">EDUCATION</button>
+    <button class="tl-tab" onclick="switchTab('involvement',this)">INVOLVEMENT</button>
+  </div>
+  <div class="tl-panel active reveal" id="tl-work">
+    <div class="timeline">
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Feb 2026 &mdash; Present <span class="tl-now">NOW</span></div>
+        <div class="tl-company">California State University, Northridge &mdash; Internship &middot; On-site</div>
+        <div class="tl-role">Cloud Windows Systems Administrator</div>
+        <ul class="tl-bullets">
+          <li>Support enterprise Windows and cloud infrastructure, monitoring system health, logs, and alerts across production environments.</li>
+          <li>Assist with server maintenance, configuration changes, and identity management within Active Directory.</li>
+          <li>Document incidents, configuration updates, and standard operating procedures to improve operational reliability.</li>
+          <li>Participate in security-focused reviews including access control validation and log auditing.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">Windows Server</span><span class="tag">Active Directory</span><span class="tag">Log Auditing</span><span class="tag">Access Control</span><span class="tag">SOPs</span></div>
+      </div>
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Dec 2025 &mdash; Present <span class="tl-now">NOW</span></div>
+        <div class="tl-company">Handshake &mdash; Part-time &middot; Remote</div>
+        <div class="tl-role">AI Data Trainer</div>
+        <ul class="tl-bullets">
+          <li>Evaluated AI-generated outputs across multiple project cycles using structured quality criteria and documented guidelines.</li>
+          <li>Maintained high guideline adherence in a fully remote, asynchronous evaluation environment.</li>
+          <li>Contributed to model improvement pipelines through consistent, high-throughput annotation and feedback delivery.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">AI Evaluation</span><span class="tag">RLHF</span><span class="tag">Quality Assurance</span><span class="tag">Remote</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Aug 2023 &mdash; Jan 2024</div>
+        <div class="tl-company">PetClub247 &mdash; Part-time &middot; Simi Valley, CA</div>
+        <div class="tl-role">Warehouse Stock Associate</div>
+        <ul class="tl-bullets">
+          <li>Maintained accuracy for 1,000+ SKUs through structured audits and organized inventory tracking.</li>
+          <li>Reduced stock discrepancies by 20% by identifying data inconsistencies during weekly counts.</li>
+          <li>Improved restocking speed by 25% by optimizing intake and replenishment workflows.</li>
+          <li>Contributed to a redesigned warehouse layout that cut order processing time by 15%.</li>
+          <li>Supported faster order fulfillment, contributing to a 10% increase in customer satisfaction.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">Inventory</span><span class="tag">Operations</span><span class="tag">Workflow Optimization</span><span class="tag">Auditing</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Jan 2020 &mdash; Jun 2023</div>
+        <div class="tl-company">Robotecus &mdash; Part-time &middot; Los Angeles, CA</div>
+        <div class="tl-role">IT Specialist</div>
+        <ul class="tl-bullets">
+          <li>Configured and maintained hardware/software across 20+ endpoints, ensuring high operational uptime and resolving complex system issues.</li>
+          <li>Deployed and managed mission-critical technical infrastructure, improving system reliability and reducing deployment latency by 30%.</li>
+          <li>Established standardized data protection and device security baselines, ensuring consistent adherence to security best practices across team lifecycles.</li>
+          <li>Implemented and managed centralized monitoring and alerting systems to track infrastructure health, identify performance anomalies, and ensure proactive incident response.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">Endpoint Mgmt</span><span class="tag">Security Baselines</span><span class="tag">Monitoring</span><span class="tag">Deployment</span><span class="tag">Incident Response</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Aug 2018 &mdash; Jun 2019</div>
+        <div class="tl-company">Van Nuys High School &mdash; Part-time &middot; Van Nuys, CA</div>
+        <div class="tl-role">IT Student Assistant</div>
+        <ul class="tl-bullets">
+          <li>Assisted 40-60 students and staff weekly with device troubleshooting, improving classroom tech uptime by ~25%.</li>
+          <li>Supported software installations and basic network setup, contributing to a 20% reduction in recurring access issues.</li>
+          <li>Helped track and organize 150+ pieces of equipment, improving inventory accuracy across multiple computer labs.</li>
+          <li>Documented common technical problems, reducing troubleshooting time for IT staff by ~30%.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">Help Desk</span><span class="tag">Inventory</span><span class="tag">Network Setup</span><span class="tag">K-12 IT</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tl-panel reveal" id="tl-education">
+    <div class="timeline">
+      <div class="tl-item tl-future">
+        <div class="tl-dot tl-dot-future"></div>
+        <div class="tl-date">Planned &mdash; Post-2026 <span class="tl-now tl-now-future">FUTURE</span></div>
+        <div class="tl-company" style="color:var(--cyan)">Cal Poly Pomona</div>
+        <div class="tl-role" style="color:var(--text-dim)">M.S. Information Security</div>
+        <ul class="tl-bullets"><li>Graduate study in information security, enterprise risk management, and advanced systems design.</li></ul>
+        <div class="tl-tags"><span class="tag tag-future">InfoSec</span><span class="tag tag-future">Graduate</span><span class="tag tag-future">PLANNED</span></div>
+      </div>
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Aug 2024 &mdash; Aug 2026 <span class="tl-now">IN PROGRESS</span></div>
+        <div class="tl-company">California State University, Northridge</div>
+        <div class="tl-role">B.S. Computer Information Technology</div>
+        <ul class="tl-bullets"><li>Data Structures, Computer Architecture, and security-focused coursework aligned to CIT cybersecurity track.</li></ul>
+        <div class="tl-tags"><span class="tag">CIT</span><span class="tag">CSUN</span><span class="tag">Cybersecurity Track</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Aug 2021 &mdash; Jun 2024 &nbsp; GPA: 3.5</div>
+        <div class="tl-company">Los Angeles Mission College</div>
+        <div class="tl-role">A.S. Computer Programming / Programmer, General</div>
+        <ul class="tl-bullets"><li>Foundational programming, software design, and applied development across Python, C, and SQL.</li></ul>
+        <div class="tl-tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">SQL</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Aug 2021 &mdash; Dec 2023 &nbsp; GPA: 3.5</div>
+        <div class="tl-company">Los Angeles Mission College</div>
+        <div class="tl-role">A.S. Cybersecurity</div>
+        <ul class="tl-bullets"><li>Network Security Fundamentals, threat models, intrusion detection, and security operations coursework.</li></ul>
+        <div class="tl-tags"><span class="tag">Cybersecurity</span><span class="tag">Network Security</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tl-panel reveal" id="tl-involvement">
+    <div class="timeline">
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Oct 2025 &mdash; Present <span class="tl-now">NOW</span></div>
+        <div class="tl-company">California State University, Northridge</div>
+        <div class="tl-role">Member &mdash; Society of Software Engineers (SOSE)</div>
+        <ul class="tl-bullets">
+          <li>Participating in project-based workshops and technical meetups focused on software engineering fundamentals.</li>
+          <li>Focusing on version control, collaborative development, and systems design practices alongside peers.</li>
+        </ul>
+        <div class="tl-tags"><span class="tag">Software Engineering</span><span class="tag">Version Control</span><span class="tag">CSUN</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">// PROJECTS.REPO</div>
+  <h2 class="sec-title">Featured <span>Projects</span></h2>
+  <div class="sec-div"></div>
+  <div class="proj-grid reveal">
+    <div class="proj-card"><div class="proj-num">01</div><div class="proj-type">Red Team / Security Tool</div><div class="proj-name">Python Keylogger + Remote C2 Server</div><div class="proj-desc">Modular Python keylogger with a Flask-based C2 server demonstrating persistence, exfiltration, and telemetry gaps. Tested across 5+ controlled environments with ethical disclaimers, sandbox instructions, and automated cleanup.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">Python</span><span class="tag">C2</span><span class="tag">Ethical Hacking</span><span class="tag">Log Analysis</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/python-keylogger" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">02</div><div class="proj-type">Security Research / Static Analysis</div><div class="proj-name">macOS Entitlement Audit</div><div class="proj-desc">Bash tooling around macOS codesign/plutil to extract and parse app entitlements. Indexed 1,000+ plist entries across Chrome, Zoom, Postman, VS Code. Pattern-matching rules flag high-risk permissions and produce remediation notes.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">macOS</span><span class="tag">Static Analysis</span><span class="tag">Detection Engineering</span><span class="tag">Bash</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/macos-entitlement-audit" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">03</div><div class="proj-type">Penetration Testing / Linux</div><div class="proj-name">Linux Privilege Escalation Lab</div><div class="proj-desc">Hands-on lab covering SUID abuse, writable /etc/passwd, sudo escapes, setcap Netcat bind shell, writable systemd service exploits, and credential leakage. Each technique documented with detection awareness notes.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">Linux</span><span class="tag">Penetration Testing</span><span class="tag">Detection Awareness</span><span class="tag">Bash</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/linux-privilege-escalation-lab" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">04</div><div class="proj-type">Security Research / SQL</div><div class="proj-name">SQL Security Lab</div><div class="proj-desc">Two Flask applications (secure and vulnerable) comparing SQL query security. Three PostgreSQL security layers: authentication, RBAC, and Row-Level Security. 50+ sample queries tracked with pg_stat_statements in a VM-based environment.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">SQL</span><span class="tag">Flask</span><span class="tag">RBAC</span><span class="tag">Web App Security</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/sql-security-lab" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">05</div><div class="proj-type">Enterprise IT / Infrastructure</div><div class="proj-name">Enterprise IT Infrastructure Lab &mdash; Silverline Technologies</div><div class="proj-desc">Simulated enterprise environment with Domain Controller, DNS, NTFS/share permissions, GPO hardening, and PowerShell automation for user creation and drive mapping. Reproducible support scenarios with step-by-step troubleshooting playbooks.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">Windows Administration</span><span class="tag">Group Policy</span><span class="tag">PowerShell</span><span class="tag">System Hardening</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/active-directory-lab" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">06</div><div class="proj-type">Full-Stack / AI &mdash; 2nd Place Hackathon</div><div class="proj-name">SkillSynth &mdash; SOSE Hackathon</div><div class="proj-desc">Second-place CSUN hackathon. Next.js frontend with Ollama + Pinecone retrieval pipelines and PostgreSQL user state. 200+ inference requests handled at judging with sub-200ms API response times. Deployed to Vercel/AWS.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">ML</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/SkillSynth" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card"><div class="proj-num">07</div><div class="proj-type">Full-Stack / Capstone</div><div class="proj-name">GuardQuote &mdash; Insurance Quote Platform</div><div class="proj-desc">Full-stack insurance platform with React, NestJS, PostgreSQL, and JWT authentication. Python ML pricing engine via FastAPI and XGBoost for premium estimation. Includes schema migrations and full architecture documentation.</div><div class="tl-tags" style="margin-bottom:14px"><span class="tag">React</span><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">FastAPI</span><span class="tag">XGBoost</span></div><div class="proj-links"><a href="https://github.com/ibernal1815/GuardQuote" target="_blank" class="proj-link">GitHub</a></div></div>
+    <div class="proj-card proj-future">
+      <div class="pf-front">
+        <div class="proj-num" style="color:var(--text-dim)">??</div>
+        <div class="proj-type" style="color:var(--text-dim)">Upcoming Projects</div>
+        <div class="proj-name" style="color:var(--text-dim)">What's Next in the Lab</div>
+        <div class="proj-desc" style="color:var(--text-dim)">New labs and tools currently in planning or early development. Hover to preview what's being built next.</div>
+        <div class="pf-hint">// hover to reveal <span class="blink">_</span></div>
+      </div>
+      <div class="pf-overlay">
+        <div class="pf-overlay-title">// UPCOMING_PROJECTS.DAT</div>
+        <div class="pf-item"><div class="pf-item-name">Sysinternals Detection Lab</div><div class="pf-item-desc">Windows-native detection using Process Monitor, Autoruns, and TCPView mapped to live attack chains.</div></div>
+        <div class="pf-item"><div class="pf-item-name">Malware Analysis Sandbox</div><div class="pf-item-desc">FLARE-VM + REMnux. Static/dynamic analysis, YARA rules, Volatility memory forensics, Sigma detection write-ups.</div></div>
+        <div class="pf-item"><div class="pf-item-name">Elastic SIEM Home Lab</div><div class="pf-item-desc">Self-hosted ELK ingesting Sysmon and Windows Event logs. Custom detection rules and alert-tuning docs.</div></div>
+        <div class="pf-item"><div class="pf-item-name">Active Directory Attack Lab</div><div class="pf-item-desc">Kerberoasting, Pass-the-Hash, DCSync, BloodHound. Each path paired with Sigma detection rules.</div></div>
+        <div class="pf-item"><div class="pf-item-name">Network Traffic Analysis Lab</div><div class="pf-item-desc">Wireshark + Suricata on segmented virtual network. C2 beaconing, exfil patterns, pcap libraries.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="sec-label">// CREDENTIALS.DB</div>
+  <h2 class="sec-title">Certs &amp; <span>Credentials</span></h2>
+  <div class="sec-div"></div>
+  <div class="reveal">
+    <div class="acc-subhead" style="margin-top:0">CompTIA</div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA CySA+ <span class="acc-badge">AUG 2024</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>Cybersecurity Analyst (CySA+)</strong> | Issued Aug 2024<br>Validates behavioral analytics to detect and combat cybersecurity threats. Covers threat intelligence, SOC operations, incident response, and vulnerability management.<div class="cred-id">Credential ID: CKTCC2J9J766VQWQ</div></div></div></div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA Security+ <span class="acc-badge">JAN 2024</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>Security+</strong> | Issued Jan 2024<br>Threat analysis, incident response, risk management, identity and access management, and cryptographic fundamentals.<div class="cred-id">Credential ID: ZQGC6WKWN83PVWWM</div></div></div></div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA Cloud Essentials+ <span class="acc-badge">ACTIVE</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>Cloud Essentials+</strong> | Active<br>Cloud computing concepts, business value, cloud adoption, and security considerations.<div class="cred-id">Credential ID: PY078Q97NQKLFL3K</div></div></div></div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA Network+ <span class="acc-badge">AUG 2023</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>Network+</strong> | Issued Aug 2023<br>Network architecture, protocols, troubleshooting, and secure network design.<div class="cred-id">Credential ID: ZB7GY5CVB4KLFV9Z</div></div></div></div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA A+ <span class="acc-badge">APR 2023</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>A+</strong> | Issued Apr 2023<br>Hardware, operating systems, networking, security, and troubleshooting across platforms.<div class="cred-id">Credential ID: ECRH5N682VL6V0KE</div></div></div></div>
+    <div class="acc-subhead">ISC2</div>
+    <div class="acc"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">ISC2 Certified in Cybersecurity (CC) <span class="acc-badge">ACTIVE</span></div><span class="acc-arrow">v</span></div><div class="acc-body"><div class="acc-content"><strong>Certified in Cybersecurity</strong> | Active<br>Security principles, business continuity, disaster recovery, access controls, network security, and security operations.</div></div></div>
+    <div class="acc-subhead" style="margin-top:28px;color:var(--orange)">// IN PROGRESS</div>
+    <div class="acc acc-studying"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CCSP <span class="acc-badge acc-badge-studying">STUDYING</span></div><span class="acc-arrow acc-arrow-studying">v</span></div><div class="acc-body"><div class="acc-content"><strong style="color:var(--orange)">Certified Cloud Security Professional</strong> | ISC2<br>Cloud architecture, data security, infrastructure security, platform and application security, operations, and legal/compliance.<div class="study-prog-row"><span class="study-prog-label">Progress</span><div class="study-bar-wrap"><div class="study-bar" style="--fill:30%"></div></div><span class="study-pct">~30%</span></div></div></div></div>
+    <div class="acc acc-studying"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">CompTIA PenTest+ <span class="acc-badge acc-badge-studying">STUDYING</span></div><span class="acc-arrow acc-arrow-studying">v</span></div><div class="acc-body"><div class="acc-content"><strong style="color:var(--orange)">PenTest+</strong> | CompTIA<br>Hands-on penetration testing and vulnerability assessment across networks, applications, and cloud environments.<div class="study-prog-row"><span class="study-prog-label">Progress</span><div class="study-bar-wrap"><div class="study-bar" style="--fill:45%"></div></div><span class="study-pct">~45%</span></div></div></div></div>
+    <div class="acc acc-studying"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">Splunk Core Certified User <span class="acc-badge acc-badge-studying">STUDYING</span></div><span class="acc-arrow acc-arrow-studying">v</span></div><div class="acc-body"><div class="acc-content"><strong style="color:var(--orange)">Splunk Core Certified User</strong><br>SPL fundamentals, search creation, dashboards, alerts, and data onboarding. Directly applicable to SOC triage and detection engineering.<div class="study-prog-row"><span class="study-prog-label">Progress</span><div class="study-bar-wrap"><div class="study-bar" style="--fill:60%"></div></div><span class="study-pct">~60%</span></div></div></div></div>
+    <div class="acc acc-studying"><div class="acc-head" onclick="toggleAcc(this)"><div class="acc-title-row">RHCSA <span class="acc-badge acc-badge-studying">STUDYING</span></div><span class="acc-arrow acc-arrow-studying">v</span></div><div class="acc-body"><div class="acc-content"><strong style="color:var(--orange)">Red Hat Certified System Administrator</strong><br>Enterprise Linux administration: file systems, user/group management, SELinux, networking, and service configuration on RHEL.<div class="study-prog-row"><span class="study-prog-label">Progress</span><div class="study-bar-wrap"><div class="study-bar" style="--fill:20%"></div></div><span class="study-pct">~20%</span></div></div></div></div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="sec-label">// BLOG.SYS</div>
+  <h2 class="sec-title">Latest <span>Posts</span></h2>
+  <div class="sec-div"></div>
+  <div class="blog-filters reveal">
+    <button class="f-btn on" onclick="filterBlog('all',this)">ALL</button>
+    <button class="f-btn" onclick="filterBlog('cyberattacks',this)">CYBER ATTACKS</button>
+    <button class="f-btn" onclick="filterBlog('books',this)">BOOKS</button>
+    <button class="f-btn" onclick="filterBlog('tech',this)">NEW TECH</button>
+    <button class="f-btn" onclick="filterBlog('labs',this)">LAB NOTES</button>
+    <button class="f-btn" onclick="filterBlog('career',this)">CAREER</button>
+  </div>
+  <div class="blog-grid reveal">
+    <div class="blog-card" data-cat="cyberattacks"><div class="blog-cat">Cyber Attacks</div><div class="blog-title">Breaking Down the Change Healthcare Ransomware Attack</div><div class="blog-excerpt">ALPHV/BlackCat initial access vectors, lateral movement, and what the security community learned about healthcare sector resilience.</div><div class="blog-meta"><span>Feb 2025</span><a href="#" class="blog-read">READ MORE</a></div></div>
+    <div class="blog-card" data-cat="books"><div class="blog-cat">Books</div><div class="blog-title">Review: The Art of Intrusion by Kevin Mitnick</div><div class="blog-excerpt">Key takeaways for security practitioners and how decades-old techniques still surface in modern threat intelligence feeds.</div><div class="blog-meta"><span>Jan 2025</span><a href="#" class="blog-read">READ MORE</a></div></div>
+    <div class="blog-card" data-cat="tech"><div class="blog-cat">New Tech</div><div class="blog-title">AI-Assisted SOC: Measured Expectations for 2025</div><div class="blog-excerpt">After working as an AI trainer in the security domain, an honest assessment of where AI accelerates analyst work versus where it adds noise.</div><div class="blog-meta"><span>Jan 2025</span><a href="#" class="blog-read">READ MORE</a></div></div>
+    <div class="blog-card" data-cat="labs"><div class="blog-cat">Lab Notes</div><div class="blog-title">Linux Privilege Escalation: What Actually Gets Detected</div><div class="blog-excerpt">Which privesc paths generate observable artifacts a tuned SIEM catches, and which ones quietly slip through.</div><div class="blog-meta"><span>Dec 2024</span><a href="#" class="blog-read">READ MORE</a></div></div>
+    <div class="blog-card" data-cat="labs"><div class="blog-cat">Lab Notes</div><div class="blog-title">macOS Entitlement Auditing for Defenders</div><div class="blog-excerpt">How to enumerate macOS app entitlements using CLI tooling, what overprivileged binaries look like, and how to write detection logic around them.</div><div class="blog-meta"><span>Nov 2024</span><a href="#" class="blog-read">READ MORE</a></div></div>
+    <div class="blog-card" data-cat="career"><div class="blog-cat">Career</div><div class="blog-title">SysAdmin to Security Engineer: Building a Transition Portfolio</div><div class="blog-excerpt">The concrete path from IT infrastructure work toward security engineering and how Windows admin experience maps to a detection context.</div><div class="blog-meta"><span>Oct 2024</span><a href="#" class="blog-read">READ MORE</a></div></div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="sec-label">// RESUME.DOWNLOAD</div>
+  <h2 class="sec-title">Download <span>Resume</span></h2>
+  <div class="sec-div"></div>
+  <div class="resume-grid reveal">
+    <a href="#" class="dl-card"><div class="dl-lbl">PDF</div><div class="dl-type">PDF</div><div class="dl-desc">Formatted for review</div></a>
+    <a href="#" class="dl-card"><div class="dl-lbl">DOC</div><div class="dl-type">DOCX</div><div class="dl-desc">Editable Word format</div></a>
+    <a href="#" class="dl-card"><div class="dl-lbl">TXT</div><div class="dl-type">Plain Text</div><div class="dl-desc">ATS-friendly</div></a>
+    <a href="#" class="dl-card"><div class="dl-lbl">MD</div><div class="dl-type">Markdown</div><div class="dl-desc">GitHub / README</div></a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-label">// CONTACT.INIT</div>
+  <h2 class="sec-title">Get In <span>Touch</span></h2>
+  <div class="sec-div"></div>
+  <div class="contact-grid reveal">
+    <div>
+      <div class="c-item"><div class="c-icon">@</div><div><div class="c-label">Email</div><div class="c-value"><a href="mailto:isaiahbernal750@outlook.com">isaiahbernal750@outlook.com</a></div></div></div>
+      <div class="c-item"><div class="c-icon">LI</div><div><div class="c-label">LinkedIn</div><div class="c-value"><a href="https://linkedin.com/in/isaiah-bernal-707576218" target="_blank">linkedin.com/in/isaiah-bernal-707576218</a></div></div></div>
+      <div class="c-item"><div class="c-icon">GH</div><div><div class="c-label">GitHub</div><div class="c-value"><a href="https://github.com/ibernal1815" target="_blank">github.com/ibernal1815</a></div></div></div>
+      <div class="c-item"><div class="c-icon">PH</div><div><div class="c-label">Phone</div><div class="c-value">(818) 984-6515</div></div></div>
+      <div class="c-item"><div class="c-icon">LOC</div><div><div class="c-label">Location</div><div class="c-value">Sylmar, CA &mdash; Open to Remote</div></div></div>
+    </div>
+    <div>
+      <div class="cf">
+        <div><label class="f-label">// NAME</label><input class="f-input" type="text" placeholder="Jane Smith"></div>
+        <div><label class="f-label">// EMAIL</label><input class="f-input" type="email" placeholder="jane@company.com"></div>
+        <div><label class="f-label">// SUBJECT</label><input class="f-input" type="text" placeholder="[OPPORTUNITY] SOC Analyst Role"></div>
+        <div><label class="f-label">// MESSAGE</label><textarea class="f-ta" placeholder="Hello Isaiah..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center">[ TRANSMIT MESSAGE ]</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">ISAIAH_BERNAL.</div>
+        <p class="foot-tag">IT Systems Specialist. Security-Oriented Developer. Cloud Windows SysAdmin at CSUN. Six active certifications. Building tooling that underpins modern security operations.</p>
+        <div class="foot-status">&gt; <span>STATUS:</span> Open to SOC Analyst and Detection Engineering roles</div>
+      </div>
+      <div>
+        <div class="foot-col-title">// Navigation</div>
+        <div class="foot-links">
+          <a href="#about">About</a><a href="#skills">Skills</a>
+          <a href="#experience">Experience</a><a href="#projects">Projects</a>
+          <a href="#certs">Certifications</a><a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-title">// Platforms</div>
+        <div class="foot-links">
+          <a href="https://github.com/ibernal1815" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/isaiah-bernal-707576218" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">TryHackMe</a>
+          <a href="#" target="_blank">HackTheBox</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="copyright">&copy; <span id="yr"></span> <span>Isaiah Bernal</span>. Built with discipline and too many terminal windows.</div>
+      <div class="soc-row">
+        <a href="https://github.com/ibernal1815" target="_blank" class="soc-link">GH</a>
+        <a href="https://linkedin.com/in/isaiah-bernal-707576218" target="_blank" class="soc-link">LI</a>
+        <a href="#" class="soc-link">TH</a><a href="#" class="soc-link">HB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
