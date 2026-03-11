@@ -114,7 +114,7 @@ This site is deployed automatically via GitHub Pages. Any push to the `main` bra
 
 **Active:** CompTIA A+, Network+, Security+, CySA+, Cloud Essentials+ — ISC2 CC
 
-**In progress:** CCSP, PenTest+, Splunk Core Certified User, RHCSA
+**In progress:** CCSP, PenTest+, RHCSA
 
 ---
 
